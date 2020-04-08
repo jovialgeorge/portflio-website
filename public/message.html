@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Jovial George">
+	<!-- Meta Description -->
+	<meta name="description" content="Official Website of Jovial George. This website can be used for business and collaboration purpose. It also include all the contact details for any kinds of enquiries.">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="Official Website of Jovial George">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Jovial George</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+	<!-- CSS
+    ============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Extras -->
+	<link rel="stylesheet" href="css/extras.css">
+</head>
+
+<body onload="checkMsg()">
+
+	<!-- Start Preloader Area -->
+	<div class="preloader-area">
+		<div class="loader-box">
+			<div class="loader"></div>
+		</div>
+	</div>
+	<!-- End Preloader Area -->
+
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" height="48" width="48" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class=""><a class="active" href="index.html#home">Home</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#work">Portfolio</a></li>
+						<li><a href="index.html#service">Service</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+						<!--
+						<li class="menu-has-children"><a href="#">Pages</a>
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="services.html">Service</a></li>
+								<li><a href="portfolio-details.html">Portfolio Details</a></li>
+							</ul>
+						</li>
+						<li class="menu-has-children"><a href="">Blog</a>
+							<ul>
+								<li><a href="blog-home.html">Blog Home</a></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+							</ul>
+						</li>
+				    	-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">
+						Let's Talk!
+					</h1>
+					<p class="link-nav">
+						<span class="box">
+							<a>Business </a>
+							<a>Collaboration</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-home"></span>
+						</div>
+						<div class="contact-details">
+							<a href="https://maps.google.com/?q=9.968479,76.299360" target="_blank">
+								<h5>Ernakulam, Kerala</h5>
+							</a>
+							<p>India</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<a href="tel:+91 7907112119">
+								<h5>+91 79 0711 2119</h5>
+							</a>
+							<p>Give a call or text me!</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-envelope"></span>
+						</div>
+						<div class="contact-details">
+							<a href="mailto:jovialgeorge@yahoo.in">
+								<h5>jovialgeorge@yahoo.in</h5>
+							</a>
+							<p>Send me your query anytime!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area" id="myForm" action="?alert=1" method="post" onsubmit="writeUserData()" class="contact-form text-right">
+						<div class="row">
+							<div class="col-lg-6 form-group form-group-top">
+								<input id="name" name="name" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"
+								 class="common-input mb-20 form-control" type="text" required>
+
+								<input id="email" name="email" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Email Address'" class="common-input mb-20 form-control" type="email" required>
+
+								<select id="subject" name="subject" class="default-select common-input mb-20 form-control m-select" required>
+									<option value="" disabled selected hidden>Subject</option>
+									<option value="Business">Business</option>
+									<option value="Collaboration">Collaboration</option>
+									<option value="Others">Others</option>
+								</select>
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea id="message" class="common-textarea form-control" name="message" placeholder="Type Your Messege Here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type Your Messege Here'"
+								 required></textarea>
+							</div>
+							<div class="col-lg-12">
+								<div class="alert-msg" style="text-align: left;"></div>
+
+								<button class="primary-btn" type="submit" form="myForm" value="Submit" style="float: right;" data-text="Send Message">
+									<span>S</span>
+									<span>e</span>
+									<span>n</span>
+									<span>d</span>
+									<span> </span>
+									<span>M</span>
+									<span>e</span>
+									<span>s</span>
+									<span>s</span>
+									<span>a</span>
+									<span>g</span>
+									<span>e</span>
+
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer-top flex-column">
+						<div class="footer-logo">
+							<img src="img/fav.png" alt="">
+							<h4>Follow Me</h4>
+						</div>
+						<div class="footer-social">
+							<a href="https://www.facebook.com/Jovial.George.008" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/jovialgeorge_/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="https://twitter.com/Jovial_George" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://github.com/Jovial248" target="_blank"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/jovial-george/" target="_blank"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					Made by <a href="https://github.com/Jovial248" target="_blank">Jovial George</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="genric-btn info circle">
+    	<i class="lnr lnr-arrow-up"></i>
+    </button>
+
+    <div id="snackbar">Message Sent</div>
+
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!-- Extras -->
+	<script src="js/extras.js"></script>
+	
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  	<!-- Firebase realtime database SDK -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+  	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+  	<!-- Firebase Config Setup -->
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	  	apiKey: "api-key",
+	  	authDomain: "project-id.firebaseapp.com",
+	  	databaseURL: "https://project-id.firebaseio.com",
+	  	projectId: "project-id",
+	  	storageBucket: "project-id.appspot.com",
+	  	messagingSenderId: "sender-id",
+	  	appId: "app-id",
+	  	measurementId: "G-measurement-id",
+      };
+      
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+
+	  // Get a reference to the database service
+  	  var database = firebase.database();
+
+  	  // Function to get current date & time
+  	  function currentdat() {
+  	  	var currentdate = new Date(); 
+		var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+        return datetime;
+  	  }
+
+  	  // Function to show a toast message
+  	  function toast() {
+	    var x = document.getElementById("snackbar");
+	    x.className = "show";
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	  }
+
+  	  // Function to write data to firebase database
+  	  function writeUserData() {
+  	  	var timestamp = currentdat(),
+  	  	    timestamp_parsed = timestamp.replace(/\//g, "-");
+  	  	firebase.database().ref('messages/' + name + " " + timestamp_parsed).set({
+  		  name: document.getElementById("name").value,
+  		  email: document.getElementById("email").value,
+  		  subject: document.getElementById("subject").value,
+  		  message: document.getElementById("message").value,
+  		  timestamp : timestamp
+  		});
+  	  }
+
+  	  // Function to check whether toast should be displayed or not
+  	  function checkMsg() {
+  	  	var urlParams = new URLSearchParams(window.location.search);
+  		var val = urlParams.get('alert');
+  		if( val == 1 ){
+  		  toast();
+  		}
+  	  }
+	</script>
+
+</body>
+
+</html>
