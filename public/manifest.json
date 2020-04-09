@@ -1,0 +1,30 @@
+{
+  "short_name": "Jovial",
+  "name": "Jovial George",
+  "theme_color": "#E45447",
+  "background_color": "#F7F8F9",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/app/logo1.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/app/logo2.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/app/logo3.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "img/app/logo4.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=launcher"
+}

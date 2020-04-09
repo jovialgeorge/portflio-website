@@ -9,17 +9,20 @@
 	<!-- Author Meta -->
 	<meta name="author" content="Jovial George">
 	<!-- Meta Description -->
-	<meta name="description" content="Official Website of Jovial George. This website can be used for business and collaboration purpose. It also include all the contact details for any kinds of enquiries.">
+	<meta name="description" content="Official Website of Jovial George. It have personal portfolio of Jovial. This website can be used for business and collaboration meeting purpose. It also include all the contact details for any kinds of enquiries.">
 	<!-- Meta Keyword -->
 	<meta name="keywords" content="Official Website of Jovial George">
-	<!-- meta character set -->
+	<!-- Meta character set -->
 	<meta charset="UTF-8">
+	<!-- Chrome Add-ons -->
+	<meta name="theme-color" content="#E45447">
+	<link rel="manifest" href="/manifest.json">
 	<!-- Site Title -->
 	<title>Jovial George</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
-	<!--	CSS
+	<!-- CSS
     ============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -27,6 +30,7 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	
 	<!-- Extras -->
 	<link rel="stylesheet" href="css/extras.css">
 </head>
@@ -153,7 +157,7 @@
 					</div>
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
-						Telling about myself I m a creative developer and technology enthusiast. I enjoy both developing and interacting with technological stuff from a young age. That's made me so passionate about building, managing, and scaling various projects and businesses. I m a solid team player too. I m pretty well at problem solving and decision making. I love working with different kinds of people and helping each other to meet their full potential and to succeed in team objectives together. Other than that, I always try to bring something new and innovative to the table.  I have worked for a couple of software based projects for its technical and marketing side. I have also been a part of some amazing open source projects.
+						Telling about myself, I m a creative developer and technology enthusiast. I enjoy both developing and interacting with technological stuff from a young age. That's made me so passionate about building, managing, and scaling various projects and businesses. I m a solid team player too. I m pretty well at problem solving and decision making. I love working with different kinds of people and helping each other to meet their full potential and to succeed in team objectives together. Other than that, I always try to bring something new and innovative to the table.  I have worked for a couple of software based projects for its technical and marketing side. I have also been a part of some amazing open source projects.
 						</p>
 						<p>
 						Currently, I am available as a freelancer. Interested in working on any kind of software project or other exciting business. Looking forward to facing new challenges and learn new cool things on my journey.
@@ -348,7 +352,7 @@
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-							I m working on EIS & IOT based project in this company. Providing software support for the data and operation of an energy & power utility company. More information can't be disclosed due to NDA agreement.
+							I m working on EIS & IOT based project in this company. Providing software support for the data and operation of an energy & power utility company.
 						</div>
 					</div>
 				</div>
@@ -593,6 +597,7 @@
 	
 	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  	<!-- Firebase realtime database SDK -->
   	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
   	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
   	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
@@ -600,21 +605,32 @@
 	<script>
 	  // Your web app's Firebase configuration
 	  var firebaseConfig = {
-	  	apiKey: "api-key",
-	  	authDomain: "project-id.firebaseapp.com",
-	  	databaseURL: "https://project-id.firebaseio.com",
-	  	projectId: "project-id",
-	  	storageBucket: "project-id.appspot.com",
-	  	messagingSenderId: "sender-id",
-	  	appId: "app-id",
-	  	measurementId: "G-measurement-id",
-      };
-
+	    apiKey: "api-key",
+	    authDomain: "project-id.firebaseapp.com",
+	    databaseURL: "https://project-id.firebaseio.com",
+	    projectId: "project-id",
+	    storageBucket: "project-id.appspot.com",
+	    messagingSenderId: "sender-id",
+	    appId: "app-id",
+	    measurementId: "G-measurement-id",
+	  };
+	  
 	  // Initialize Firebase
 	  firebase.initializeApp(firebaseConfig);
 
 	  // Get a reference to the database service
   	  var database = firebase.database();
+
+  	  // Add to HomeScreen
+  	  if ('serviceWorker' in navigator) {
+      	console.log("Will the service worker register?");
+      	navigator.serviceWorker.register('service-worker.js')
+        .then(function(reg){
+          console.log("Yes, it did.");
+       	}).catch(function(err) {
+          console.log("No it didn't. This happened:", err)
+        });
+ 	  }
 	</script>
 
 </body>
