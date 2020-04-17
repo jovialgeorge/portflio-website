@@ -12,6 +12,13 @@ function scrollFunction() {
   }
 }
 
+$(document).ready(function(){
+    $("#loginModal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+});
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;

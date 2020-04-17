@@ -71,6 +71,14 @@
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+body.modal-open .container{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;} 
   to {bottom: 30px; opacity: 1;}
