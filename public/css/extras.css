@@ -71,6 +71,10 @@
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+.auth-msg {
+  color: red;
+}
+
 body.modal-open .container{
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);

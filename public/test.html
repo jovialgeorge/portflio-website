@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body onload="checkMsg()">
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  	<!-- Firebase realtime database SDK -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+  	<!-- Firebase Config Setup -->
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyAFfqAK53CH0MJL7x8BolO6AUOwEOV5210",
+	    authDomain: "iamjovialgeorge.firebaseapp.com",
+	    databaseURL: "https://iamjovialgeorge.firebaseio.com",
+	    projectId: "iamjovialgeorge",
+	    storageBucket: "iamjovialgeorge.appspot.com",
+	    messagingSenderId: "36685840244",
+	    appId: "1:36685840244:web:37dc93a366e025ba6c7621"
+	  };
+	  
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+
+	  // Get a reference to the database service
+  	  var database = firebase.database();
+  	  var provider = new firebase.auth.GoogleAuthProvider();
+
+  	  function checkMsg() {
+  	  	firebase.auth().signInWithRedirect(provider); // Opens a popup window and returns a promise to handle errors.
+  	  }
+	</script>
+</body>
+
+</html>
